@@ -1,0 +1,108 @@
+:root{--navy:#092b59;--blue:#123f78;--green:#16833b;--lime:#8ac926;--yellow:#f2c500;--ink:#183047;--muted:#607184;--paper:#f7faf7;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(10px);border-bottom:1px solid #e7eee8}
+.nav{height:92px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.45rem;letter-spacing:-.7px;color:var(--navy)}
+.brand strong{color:var(--green)}.brand svg{width:48px;height:48px}
+nav{display:flex;gap:24px;align-items:center;font-size:.94rem;font-weight:700;color:#30485c}
+nav a:hover{color:var(--green)}.nav-cta,.btn{background:var(--green);color:white;padding:12px 20px;border-radius:8px;font-weight:800;display:inline-block;border:0;cursor:pointer}
+.nav-cta:hover,.btn:hover{background:#0f6b30}
+.hero{background:linear-gradient(115deg,#092b59 0%,#10477a 57%,#167b42 100%);color:white;overflow:hidden;position:relative}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid #ffffff24;border-radius:50%;right:-120px;top:-180px;box-shadow:0 0 0 45px #ffffff0b,0 0 0 95px #ffffff08}
+.hero-grid{min-height:520px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:40px;padding:72px 0;position:relative;z-index:1}
+.eyebrow{color:#d4f18b;text-transform:uppercase;letter-spacing:2px;font-weight:800;font-size:.78rem}
+h1{font-size:clamp(2.5rem,5vw,4.3rem);line-height:1.06;letter-spacing:-2px;margin:14px 0 20px}
+.hero p{font-size:1.12rem;color:#e6f0f6;max-width:600px;margin:0 0 28px}
+.hero .btn{background:var(--yellow);color:var(--navy);padding:15px 24px}.hero .btn:hover{background:#ffda31}
+.hero-note{display:block;margin-top:18px;font-size:.85rem;color:#d4e4ed}
+.farm-art{min-height:330px;display:flex;align-items:center;justify-content:center}
+.animal-card{width:min(420px,100%);padding:24px;background:#ffffff12;border:1px solid #ffffff35;border-radius:24px;backdrop-filter:blur(4px)}
+.animal-card svg{width:100%;height:auto;display:block}
+.animal-labels{display:flex;justify-content:space-around;color:#eaf5ed;font-weight:800;font-size:.85rem;margin-top:8px}
+section{padding:82px 0}.section-soft{background:var(--paper)}
+.section-head{text-align:center;max-width:720px;margin:0 auto 42px}.section-head h2{font-size:clamp(1.9rem,3.5vw,2.7rem);line-height:1.15;color:var(--navy);margin:8px 0 12px}.section-head p{color:var(--muted);margin:0}
+.kicker{font-size:.78rem;letter-spacing:1.8px;text-transform:uppercase;color:var(--green);font-weight:900}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;border:1px solid #e5eee7;border-radius:16px;padding:26px;box-shadow:0 8px 28px #163b2010}
+.card-icon{width:50px;height:50px;border-radius:13px;background:#eaf6e9;display:grid;place-items:center;font-size:1.55rem;margin-bottom:16px}
+.card h3{color:var(--navy);margin:0 0 8px;font-size:1.15rem}.card p{color:var(--muted);margin:0;font-size:.96rem}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about-panel{background:linear-gradient(145deg,#e8f5e8,#f6f9ed);border-radius:22px;padding:35px;min-height:280px;display:flex;flex-direction:column;justify-content:center}
+.about-panel .big{font-size:2.2rem;font-weight:900;color:var(--green);line-height:1.15}.about-panel p{color:#526a5a}
+.about-copy h2{font-size:2.3rem;line-height:1.15;color:var(--navy);margin:10px 0 18px}.about-copy p{color:var(--muted)}
+.checks{padding:0;list-style:none}.checks li{margin:10px 0;font-weight:700}.checks li:before{content:"✓";color:var(--green);font-weight:900;margin-right:10px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}.step{padding:25px;border-left:3px solid var(--lime);background:#fff;border-radius:0 14px 14px 0}.step b{display:block;color:var(--navy);font-size:1.1rem;margin:8px 0}.step-num{color:var(--green);font-size:1.8rem;font-weight:900}
+.clients{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}.client-box{padding:30px;border:1px solid #e2ece4;border-radius:16px}.client-box h3{color:var(--navy);margin-top:0}.client-box p{color:var(--muted)}
+.cert-note{background:#f0f6ff;border-left:4px solid var(--blue);padding:18px 20px;border-radius:8px;color:#40576d;font-size:.92rem}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:start}
+.contact-info{background:var(--navy);color:white;padding:30px;border-radius:18px}.contact-info h3{font-size:1.5rem;margin-top:0}.contact-info p{color:#d8e6f0}.contact-info a{color:#d8f49a;font-weight:700}
+form{background:white;padding:30px;border:1px solid #e3ece5;border-radius:18px;box-shadow:0 10px 30px #143c2010}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}label{display:block;font-size:.88rem;font-weight:800;color:#30485c;margin-bottom:6px}.field{margin-bottom:15px}
+input,textarea{width:100%;padding:13px 14px;border:1px solid #ccd9d0;border-radius:8px;font:inherit;color:var(--ink);background:#fcfefc}
+input:focus,textarea:focus{outline:2px solid #a6d9a9;border-color:var(--green)}textarea{min-height:105px;resize:vertical}
+form button{width:100%;font-size:1rem;padding:15px}
+.form-help{font-size:.8rem;color:var(--muted);margin:12px 0 0}
+footer{background:#061e3e;color:#d8e5ee;padding:32px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-brand{font-size:1.25rem;font-weight:900;color:white}.footer-brand span{color:#8bd24a}.footer-small{font-size:.82rem;color:#b5c6d4}
+@media(max-width:800px){nav{gap:12px;font-size:.82rem}.nav-cta{display:none}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-grid{padding:58px 0}.farm-art{min-height:240px}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.about-grid{gap:25px}.clients{grid-template-columns:1fr}}
+@media(max-width:560px){.nav{height:auto;min-height:72px;flex-wrap:wrap;padding:10px 0}.brand{font-size:1.25rem}.brand svg{width:40px}nav{width:100%;justify-content:space-between;padding:4px 0 8px;font-size:.78rem}.cards,.form-grid{grid-template-columns:1fr}section{padding:60px 0}.hero-grid{min-height:0}.hero h1{letter-spacing:-1px}.footer-row{display:block}.footer-small{margin-top:10px}}
+
+.brand-logo{display:block;width:88px;height:88px;max-height:88px;object-fit:contain}
+.brand{display:flex;align-items:center;gap:12px}
+@media(max-width:640px){.nav{height:auto;min-height:76px}.brand-logo{width:66px;height:66px;max-height:66px}}
+
+
+.farm-art .animal-card{width:min(560px,100%);padding:0;background:transparent;border:0;border-radius:24px;backdrop-filter:none;overflow:hidden;box-shadow:0 18px 42px #061d3a22}
+.farm-animals-image{display:block;width:100%;height:auto;object-fit:contain;border-radius:24px}
+@media(max-width:760px){.farm-art .animal-card{width:min(520px,100%)}}
+
+
+.contact-stack{display:flex;flex-direction:column;gap:54px;max-width:900px;margin:0 auto}
+.contact-block{width:100%}
+.contact-block-head{max-width:700px;margin:0 auto 22px;text-align:center}
+.contact-block-head h3{font-size:1.55rem;color:var(--navy);margin:7px 0}
+.contact-block-head p{color:var(--muted);margin:0}
+.contact-info{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 28px;background:var(--navy);color:white;padding:32px;border-radius:18px}
+.contact-item{display:flex;flex-direction:column;gap:6px;min-width:0}
+.contact-item strong{color:#d8f49a;font-size:.9rem}
+.contact-item span,.contact-item a{color:#fff;overflow-wrap:anywhere}
+.contact-info .contact-disclaimer{grid-column:1/-1;margin:2px 0 0;padding-top:16px;border-top:1px solid #ffffff30;color:#c8d8e5;font-size:.8rem}
+.request-block{padding-top:2px}
+.request-block form{max-width:900px;margin:0 auto}
+@media(max-width:700px){.contact-stack{gap:40px}.contact-info{grid-template-columns:1fr 1fr;padding:24px;gap:18px}.contact-info .contact-disclaimer{grid-column:1/-1}}
+@media(max-width:460px){.contact-info{grid-template-columns:1fr}}
+
+
+/* Galeria fotográfica agropecuária */
+.photo-gallery{padding:68px 0 76px;background:#f5f8f4}
+.photo-gallery .section-head{max-width:760px;margin:0 auto 30px;text-align:center}
+.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.photo-card{margin:0;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px #173b2412;border:1px solid #e7eee8}
+.photo-card img{display:block;width:100%;height:260px;object-fit:cover;transition:transform .35s ease}
+.photo-card:hover img{transform:scale(1.04)}
+.photo-card figcaption{padding:14px 16px 16px}
+.photo-card strong{display:block;color:var(--navy);font-size:1.02rem;margin-bottom:3px}
+.photo-card span{display:block;color:var(--muted);font-size:.88rem}
+.photo-credit{font-size:.76rem;color:#6b7c70;text-align:right;margin:12px 2px 0}
+.photo-credit a{text-decoration:underline;color:#42654b}
+@media(max-width:850px){.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.photo-grid{grid-template-columns:1fr}.photo-card img{height:220px}}
+
+
+/* Imagens dos serviços */
+#servicos .cards{align-items:stretch}
+#servicos .card{padding:0;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease}
+#servicos .card:hover{transform:translateY(-4px);box-shadow:0 14px 34px #163b2018}
+#servicos .card-image{display:block;width:100%;height:190px;object-fit:cover}
+#servicos .card-content{padding:22px 24px 25px}
+#servicos .card-icon{margin-bottom:12px}
+@media(max-width:560px){#servicos .card-image{height:210px}#servicos .card-content{padding:20px}}
+
+
+/* Imagens da seção Compromisso com a economia familiar */
+#clientes .client-box{padding:0;overflow:hidden}
+#clientes .client-image{display:block;width:100%;height:250px;object-fit:cover}
+#clientes .client-box h3,#clientes .client-box p{margin-left:30px;margin-right:30px}
+#clientes .client-box h3{margin-top:26px}
+#clientes .client-box p:last-child{margin-bottom:30px}
+@media(max-width:700px){#clientes .clients{grid-template-columns:1fr}#clientes .client-image{height:220px}}
